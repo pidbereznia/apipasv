@@ -1,0 +1,20 @@
+{
+  "name": "apipasv",
+  "version": "1.0.0",
+  "description": "API tests for Payment System",
+  "scripts": {
+    "test": "npx mocha --config .mocharc.js"
+  },
+  "keywords": [],
+  "author": "Nataliia Pidbereznia",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.4",
+    "@babel/register": "^7.15.3",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.1"
+  }
+}
