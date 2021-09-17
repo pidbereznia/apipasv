@@ -4,6 +4,8 @@ class AuthHelper {
     constructor() {
         this.response = null;
     }
+
+
     async get(login, password) {
         await supertest(process.env.BASE_URL)
             .post('/auth')

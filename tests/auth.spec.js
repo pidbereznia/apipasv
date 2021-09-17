@@ -1,6 +1,7 @@
 import {expect} from 'chai';
 import AuthHelper from '../helpers/auth.helper';
 
+
 describe('auth', function () {
     let authHelper = new AuthHelper();
 
@@ -31,12 +32,18 @@ describe('auth', function () {
             expect(authHelper.response.statusCode).to.eq(404);
         });
 
-        it('response status code is 404', function (){
+        it('response body contain error message', function (){
 
              expect(authHelper.response.body.message).to.eq('Wrong login or password.');
 
 
             });
         });
+
+
+
+
+
+
 
 });
