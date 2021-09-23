@@ -3,7 +3,7 @@ import UsersHelper from '../helpers/users.helper';
 import ConfigHelper from '../helpers/config.helper';
 import { getRandomItem } from '../helpers/common.helper';
 
-describe('users', function () {
+ describe('users', function () {
     let usersHelper = new UsersHelper();
     let config = new ConfigHelper();
 
@@ -25,6 +25,8 @@ describe('users', function () {
 
             expect(usersHelper.response.body.amount).not.to.be.undefined;
         });
+
+
     });
 
     describe('user deletion', function () {
